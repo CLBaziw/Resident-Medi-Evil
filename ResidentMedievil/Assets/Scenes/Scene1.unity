@@ -1474,7 +1474,7 @@ GameObject:
   - component: {fileID: 242371100}
   - component: {fileID: 242371103}
   m_Layer: 0
-  m_Name: Teleporter_Tutorial
+  m_Name: TutorialTP
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2139,6 +2139,7 @@ GameObject:
   - component: {fileID: 1245897563}
   - component: {fileID: 1245897565}
   - component: {fileID: 1245897564}
+  - component: {fileID: 1245897566}
   m_Layer: 5
   m_Name: Message
   m_TagString: MsgBox
@@ -2205,6 +2206,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1245897562}
   m_CullTransparentMesh: 0
+--- !u!114 &1245897566
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1245897562}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48672623f10cd9646a311fcb4f0ac5bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1336241379
 GameObject:
   m_ObjectHideFlags: 0

@@ -42,8 +42,15 @@ public class Message : MonoBehaviour
         var nameTrigger = gameObject.name;
 
         Debug.Log(nameTrigger);
-               
-        msgBox.text = messageDisplay.nameTrigger;
+        
+        if (nameTrigger == "Welcome")
+        {
+            msgBox.text = messageDisplay.Welcome;
+        }
+        else if (nameTrigger == "Tutorial")
+        {
+            msgBox.text = messageDisplay.TutorialTP;
+        }
     }
 
     //Clear message when player has left the trigger area
