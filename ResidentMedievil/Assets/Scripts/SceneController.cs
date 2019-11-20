@@ -17,14 +17,16 @@ public class SceneController : MonoBehaviour
         
     }
 
-    void OnTriggerStay(Collider other)
+    void OnTriggerEnter2D(Collider2D other)
     {
         int nextSceneIndex = SceneManager.GetActiveScene().buildIndex + 1;
 
-        Debug.Log("Trigger");
+        Debug.Log("trigger");
 
         if (other.gameObject.tag == "Player")
         {
+            Debug.Log("If statement triggered");
+
             SceneManager.LoadScene(nextSceneIndex);
         }
     }

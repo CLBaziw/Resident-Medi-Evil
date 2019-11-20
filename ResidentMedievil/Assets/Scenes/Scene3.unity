@@ -136,7 +136,7 @@ GameObject:
   - component: {fileID: 496990460}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -198,7 +198,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed4f115e9320dff42a42b0d30ae4f89d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 5
+  moveSpeed: 3
   movement: {x: 0, y: 0}
   animator: {fileID: 496990461}
 --- !u!50 &496990463
@@ -313,7 +313,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 886129871}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.059999943, y: 0, z: -10}
+  m_LocalPosition: {x: 0, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 496990465}
@@ -885,7 +885,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1265304917}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1aa55fb1ad9bdf0458efa15bb553933b, type: 3}
+  m_Script: {fileID: 11500000, guid: 766a0339c27cf804ba25c3e4b7f045c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!58 &1265304919
