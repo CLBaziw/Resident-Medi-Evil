@@ -8,6 +8,7 @@ using UnityEngine.UI;
 
 public class Message : MonoBehaviour
 {
+    //public string message = "";
     private class msgDisplay
     {
         public String Welcome;
@@ -39,10 +40,12 @@ public class Message : MonoBehaviour
     {
         var messageDisplay = new msgDisplay();
         //Get name of trigger to use to call different methods
-        var nameTrigger = gameObject.name;
+        string nameTrigger = gameObject.name;
 
         Debug.Log(nameTrigger);
-        
+
+        //msgBox.text = messageDisplay.nameTrigger;
+
         if (nameTrigger == "Welcome")
         {
             msgBox.text = messageDisplay.Welcome;
@@ -51,6 +54,11 @@ public class Message : MonoBehaviour
         {
             msgBox.text = messageDisplay.TutorialTP;
         }
+        else if (nameTrigger == "Exit")
+        {
+            msgBox.text = "You win!";
+        }
+       
     }
 
     //Clear message when player has left the trigger area
