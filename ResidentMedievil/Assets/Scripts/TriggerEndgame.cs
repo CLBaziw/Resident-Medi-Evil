@@ -15,7 +15,8 @@ public class TriggerEndgame : MonoBehaviour
     {
         
     }
-
+    
+    //When endgame collider is trigger, trigger endgame.
     void OnTriggerEnter2D(Collider2D collision)
     {
         Debug.Log("Trigger Endgame");
