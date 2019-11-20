@@ -44,9 +44,6 @@ TagManager:
   - name: Collideable
     uniqueID: 3103927877
     locked: 0
-  - name: Teleporter
-    uniqueID: 4067554403
-    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
