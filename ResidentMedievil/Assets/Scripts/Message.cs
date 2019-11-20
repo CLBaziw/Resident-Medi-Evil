@@ -11,11 +11,18 @@ public class Message : MonoBehaviour
     private class msgDisplay
     {
         public String Welcome;
-        public String Tutorial;
+        public String TutorialTP;
+        public String TutorialStart;
+        public String Jump;
+        public String Gun;
+        
         public msgDisplay()
         {
             this.Welcome = "Welcome to Resident Medi-evil. Press W to move up, A to move left, S to move down, and D to move right.";
-            this.Tutorial = "Stand on this teleporter to complete the tutorial.";
+            this.TutorialTP = "Stand on this teleporter to complete the tutorial.";
+            this.TutorialStart = "Welcome to the tutorial. Be careful of hostile enemies and objects. Use WASD to dodge incoming projectiles.";
+            this.Jump = "Press the spacebar to jump over one square.";
+            this.Gun = "Press 'J' to shoot your gun at the enemies!";
         }
     }
 
@@ -36,7 +43,7 @@ public class Message : MonoBehaviour
 
         Debug.Log(nameTrigger);
                
-        msgBox.text = messageDisplay.Welcome;
+        msgBox.text = messageDisplay.nameTrigger;
     }
 
     //Clear message when player has left the trigger area
