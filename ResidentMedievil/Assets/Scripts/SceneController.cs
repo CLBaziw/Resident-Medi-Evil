@@ -23,19 +23,24 @@ public class SceneController : MonoBehaviour
         {
             string teleporterName = gameObject.name;
 
-            //If the teleporter will be used for the tutorial, do not advance to next scene
-            //Skip to scene 8
-            if (teleporterName == "Teleporter_Tutorial")
+            if (teleporterName == "Teleporter_Tutorial") //Teleporter from Scene1 to Tutorial
             {
-                SceneManager.LoadScene(8);
+                SceneManager.LoadScene(9);
             }
-            else if (teleporterName == "Teleporter_Scene1")
+            else if (teleporterName == "Teleporter_Scene1") //Teleporter from Tutorial to Scene1
             {
                 SceneManager.LoadScene(0);
             }
-            //Teleporter takes you to next scene
-            //Provided the teleporter is not used for the tutorial level
-            else{
+            else if (teleporterName == "Teleporter_Final") //Teleporter from Scene1 alternate route to Final scene.
+            {
+                SceneManager.LoadScene(8);
+            }
+            else if (teleporterName == "Teleporter_S1TP2") //Teleporter back to first scene to take alternate route.
+            {
+                SceneManager.LoadScene(0);
+            }
+            else
+            {
                 int nextSceneIndex = SceneManager.GetActiveScene().buildIndex + 1;
                 SceneManager.LoadScene(nextSceneIndex);
             }
