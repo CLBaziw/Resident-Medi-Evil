@@ -5,15 +5,19 @@ using UnityEngine.UI;
 
 public class PowerUps : MonoBehaviour
 {
-    private GameObject openChest;
-
     //Power Ups
-    public bool Audio = false;
+    //public bool Audio = false;
+
+    public SpriteRenderer spriteRenderer;
+
+    public Sprite openSprite, closedSprite;
+
+    private bool isOpen;
 
     // Start is called before the first frame update
     void Start()
     {
-        openChest = GameObject.Find("Open_Chest");
+        
     }
 
     // Update is called once per frame
@@ -22,23 +26,23 @@ public class PowerUps : MonoBehaviour
         
     }
 
-    public void OnCollisionEnter2D(Collision2D powerup)
+    public void OnCollisionEnter2D(Collision2D player)
     {
-        Debug.Log("Chest triggered");
-
-        if (powerup.gameObject.name == "Audio")
+        if (isOpen)
         {
-            Audio = true;
+            Debug.Log("Stop"); //If chest is open no more interacting
+        }
+        else
+        {
+            changeChest();
+
+            //Write switch statement to check which powerup it is
         }
     }
-
-    /*
-    private void changeChest(Collider2D powerup)
+    
+    private void changeChest()
     {
-        powerup.gameObject.SetActive(false); //Get rid of triggerable chest (closed chest)
-
-        openChest.enabled = false;
-
+        isOpen = true;
+        spriteRenderer.sprite = openSprite;
     }
-    */
 }
