@@ -8,28 +8,24 @@ public class PlayerMovement : MonoBehaviour
     public float moveSpeed = 3f;
     public Vector2 movement;
     public Animator animator;
-
+    
     //Private variables
     private Rigidbody2D rBody;
 
     private void Start()
     {
-       rBody = GetComponent<Rigidbody2D>();    
+        rBody = GetComponent<Rigidbody2D>();
     }
 
     void Update()
     {
-        
+        //Grabbing movement
+        movement.x = Input.GetAxisRaw("Horizontal");
+        movement.y = Input.GetAxisRaw("Vertical");
     }
 
     void FixedUpdate()
     {
-        //Grabbing movement
-        movement.x = Input.GetAxisRaw("Horizontal");
-        movement.y = Input.GetAxisRaw("Vertical");
-
-        
-
         if (movement != Vector2.zero)
         {
             //Call animator for movement
