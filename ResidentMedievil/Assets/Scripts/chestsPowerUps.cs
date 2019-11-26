@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class chestsPowerUps : MonoBehaviour
+public class ChestsPowerUps : MonoBehaviour
 {
     //Change sprite that is used
     public SpriteRenderer spriteRenderer;
@@ -11,8 +11,14 @@ public class chestsPowerUps : MonoBehaviour
 
     //Private variables
     private bool isOpen; //Check if chest as already been triggered
-    private GameController gController;
     private string chestName;
+
+    //Power Up Trackers
+    private bool audio = false;
+    private bool jetPack = false;
+    private bool speedUp = false;
+    private bool lantern = false;
+    private bool explosive = false;
 
     // Start is called before the first frame update
     void Start()
@@ -35,14 +41,39 @@ public class chestsPowerUps : MonoBehaviour
         }
         else
         {
-            changeChest();
+            ChangeChest();
 
-            //gController.checkPowerUp(chestName);            
+            Debug.Log(chestName);
+
+            CheckPowerUp(chestName);            
         }
     }
-    
+
+    public void CheckPowerUp(string chestName)
+    {
+        //Check which power up was collected
+        switch (chestName)
+        {
+            case "Audio":
+                audio = true;
+                break;
+            case "Jetpack":
+                jetPack = true;
+                break;
+            case "SpeedUp":
+                speedUp = true;
+                break;
+            case "Lantern":
+                lantern = true;
+                break;
+            case "Explosive":
+                explosive = true;
+                break;
+        }
+    }
+
     //Makes chest not triggerable and changes appearance
-    private void changeChest()
+    private void ChangeChest()
     {
         isOpen = true;
         spriteRenderer.sprite = openSprite;
