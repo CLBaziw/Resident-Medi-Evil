@@ -13,11 +13,11 @@ public class GameController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            //Quit the game - THIS NEEDS TO BE CHANGED TO A MENU
-            Application.Quit();
+            Debug.Log("Esc key has been pressed");
+            
+            //Bring up menu
         }
     }
 }

@@ -29,7 +29,7 @@ public class ChestsPowerUps : MonoBehaviour
     void Start()
     {
         
-        audioController = GameObject.Find("AudioController").GetComponent<AudioSource>();
+        audioController = GameObject.Find("GameController").GetComponent<AudioSource>();
         playerMovement = FindObjectOfType<PlayerMovement>();
         messageDisplay = FindObjectOfType<MessageDisplay>();
     }
