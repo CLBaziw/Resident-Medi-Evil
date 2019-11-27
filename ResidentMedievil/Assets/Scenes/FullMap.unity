@@ -2227,7 +2227,7 @@ GameObject:
   m_Component:
   - component: {fileID: 325642950}
   m_Layer: 0
-  m_Name: Waypoint3_4
+  m_Name: Waypoint4_5
   m_TagString: Untagged
   m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -2241,7 +2241,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 325642949}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -10.08, y: -6.13, z: 0}
+  m_LocalPosition: {x: -10.01, y: -6.03, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 429796253}
@@ -2271,7 +2271,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 355885929}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -10.01, y: 0.92, z: 0}
+  m_LocalPosition: {x: -10.98, y: 15.97, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 381769520}
@@ -2421,7 +2421,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -11.8, y: -31.3}
+  m_AnchoredPosition: {x: -15.03, y: -30.99}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &392165800
@@ -2445,7 +2445,7 @@ GameObject:
   - component: {fileID: 429796255}
   - component: {fileID: 429796254}
   m_Layer: 0
-  m_Name: Teleporter3_4
+  m_Name: Teleporter4_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4568,7 +4568,7 @@ GameObject:
   m_Component:
   - component: {fileID: 516888530}
   m_Layer: 0
-  m_Name: Room6
+  m_Name: Room3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4588,7 +4588,7 @@ Transform:
   - {fileID: 1188927871}
   - {fileID: 565937788}
   m_Father: {fileID: 1688019262}
-  m_RootOrder: 6
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &543735043
 GameObject:
@@ -5499,7 +5499,7 @@ GameObject:
   m_Component:
   - component: {fileID: 712929974}
   m_Layer: 0
-  m_Name: Room3
+  m_Name: Room4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5519,7 +5519,7 @@ Transform:
   - {fileID: 429796253}
   - {fileID: 1487492356}
   m_Father: {fileID: 1688019262}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &728559665
 GameObject:
@@ -6086,7 +6086,7 @@ GameObject:
   m_Component:
   - component: {fileID: 761203656}
   m_Layer: 0
-  m_Name: Waypoint4_5
+  m_Name: Waypoint5_6
   m_TagString: Untagged
   m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -9759,7 +9759,7 @@ GameObject:
   - component: {fileID: 1022700826}
   - component: {fileID: 1022700825}
   m_Layer: 0
-  m_Name: Teleporter5_6
+  m_Name: Teleporter6_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10909,7 +10909,7 @@ GameObject:
   - component: {fileID: 1188927873}
   - component: {fileID: 1188927872}
   m_Layer: 0
-  m_Name: Teleporter6_7
+  m_Name: Teleporter3_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11250,7 +11250,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1312665241}
   m_Layer: 0
-  m_Name: Waypoint6_7
+  m_Name: Waypoint3_4
   m_TagString: Untagged
   m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -11264,7 +11264,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1312665240}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.9, y: -15.01, z: 0}
+  m_LocalPosition: {x: -3.06, y: -10.93, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1188927871}
@@ -12931,7 +12931,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -0.5, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1547421398
@@ -13857,10 +13857,10 @@ Transform:
   - {fileID: 1517022621}
   - {fileID: 1389968177}
   - {fileID: 1487989104}
+  - {fileID: 516888530}
   - {fileID: 712929974}
   - {fileID: 1950974486}
   - {fileID: 1708787482}
-  - {fileID: 516888530}
   - {fileID: 1848923468}
   - {fileID: 157109601}
   - {fileID: 1146815702}
@@ -14378,7 +14378,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1708787482}
   m_Layer: 0
-  m_Name: Room5
+  m_Name: Room6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14398,7 +14398,7 @@ Transform:
   - {fileID: 1022700824}
   - {fileID: 1394799225}
   m_Father: {fileID: 1688019262}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1744671603
 GameObject:
@@ -15908,7 +15908,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1950974486}
   m_Layer: 0
-  m_Name: Room4
+  m_Name: Room5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15928,7 +15928,7 @@ Transform:
   - {fileID: 2028256876}
   - {fileID: 645335404}
   m_Father: {fileID: 1688019262}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1968529524
 GameObject:
@@ -15940,7 +15940,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1968529525}
   m_Layer: 0
-  m_Name: Waypoint5_6
+  m_Name: Waypoint6_7
   m_TagString: Untagged
   m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -15954,7 +15954,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1968529524}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -11.04, y: 3.89, z: 0}
+  m_LocalPosition: {x: -1.91, y: -15.36, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1022700824}
@@ -19456,7 +19456,7 @@ GameObject:
   - component: {fileID: 2028256878}
   - component: {fileID: 2028256877}
   m_Layer: 0
-  m_Name: Teleporter4_5
+  m_Name: Teleporter5_6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
