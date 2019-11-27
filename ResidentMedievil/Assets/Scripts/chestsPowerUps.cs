@@ -14,20 +14,22 @@ public class ChestsPowerUps : MonoBehaviour
     private string chestName;
 
     //Power Up Trackers
-    private bool audio = false;
-    private bool jetPack = false;
-    private bool speedUp = false;
-    private bool lantern = false;
-    private bool explosive = false;
+    public bool audio = false;
+    public bool jetPack = false;
+    public bool speedUp = false;
+    public bool lantern = false;
+    public bool explosive = false;
 
     //Controllers
     private AudioSource audioController;
+    private PlayerMovement playerMovement;
 
     // Start is called before the first frame update
     void Start()
     {
-        chestName = GameObject.FindGameObjectWithTag("Chest").name;
-        audioController = GameObject.Find("AudioController").GetComponent<AudioSource>();    
+        
+        audioController = GameObject.Find("AudioController").GetComponent<AudioSource>();
+        playerMovement = FindObjectOfType<PlayerMovement>();  
     }
 
     // Update is called once per frame
@@ -47,13 +49,15 @@ public class ChestsPowerUps : MonoBehaviour
         {
             ChangeChest();
 
+            chestName = gameObject.name;
+
             Debug.Log(chestName);
 
-            CheckPowerUp(chestName);            
+            CheckPowerUp(chestName, player);            
         }
     }
 
-    public void CheckPowerUp(string chestName)
+    private void CheckPowerUp(string chestName, Collision2D player)
     {
         //Check which power up was collected
         switch (chestName)
@@ -64,15 +68,19 @@ public class ChestsPowerUps : MonoBehaviour
                 break;
             case "Jetpack":
                 jetPack = true;
+                Debug.Log("Jetpack has been picked up"); //Implement double jump
                 break;
             case "SpeedUp":
                 speedUp = true;
+                increaseSpeed();
                 break;
             case "Lantern":
                 lantern = true;
+                Debug.Log("Lantern has been picked up"); //Implement Fog of War
                 break;
             case "Explosive":
                 explosive = true;
+                Debug.Log("Explosive rounds have been picked up"); //Implement explosive rounds
                 break;
         }
     }
@@ -87,5 +95,10 @@ public class ChestsPowerUps : MonoBehaviour
     private void playMusic()
     {
         audioController.Play();
+    }
+
+    private void increaseSpeed()
+    {
+        playerMovement.moveSpeed = 2 * playerMovement.moveSpeed; //Double player movement speed
     }
 }

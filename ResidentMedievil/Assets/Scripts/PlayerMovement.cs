@@ -5,10 +5,10 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     //Public variables
-    public float moveSpeed = 3f;
     public Vector2 movement;
+    public float moveSpeed = 3f;
     public Animator animator;
-    
+
     //Private variables
     private Rigidbody2D rBody;
 

@@ -19,8 +19,6 @@ public class Teleporter : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D player)
     {
-        Debug.Log(waypoint.transform.position);
-
         player.transform.position = waypoint.transform.position;
     }
 }
