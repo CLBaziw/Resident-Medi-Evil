@@ -4,14 +4,10 @@ using UnityEngine;
 
 public class GameController : MonoBehaviour
 {
-    
-
-    private AudioSource song;
-
     // Start is called before the first frame update
     void Start()
     {
-        song = GetComponent<AudioSource>();
+
     }
 
     // Update is called once per frame

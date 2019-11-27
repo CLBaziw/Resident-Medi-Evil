@@ -20,10 +20,14 @@ public class ChestsPowerUps : MonoBehaviour
     private bool lantern = false;
     private bool explosive = false;
 
+    //Controllers
+    private AudioSource audioController;
+
     // Start is called before the first frame update
     void Start()
     {
         chestName = GameObject.FindGameObjectWithTag("Chest").name;
+        audioController = GameObject.Find("AudioController").GetComponent<AudioSource>();    
     }
 
     // Update is called once per frame
@@ -56,6 +60,7 @@ public class ChestsPowerUps : MonoBehaviour
         {
             case "Audio":
                 audio = true;
+                playMusic();
                 break;
             case "Jetpack":
                 jetPack = true;
@@ -77,5 +82,10 @@ public class ChestsPowerUps : MonoBehaviour
     {
         isOpen = true;
         spriteRenderer.sprite = openSprite;
+    }
+
+    private void playMusic()
+    {
+        audioController.Play();
     }
 }
