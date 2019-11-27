@@ -14,7 +14,7 @@ public class ChestsPowerUps : MonoBehaviour
     private string chestName;
 
     //Power Up Trackers
-    public bool audio = false;
+    public bool audioOn = false;
     public bool jetPack = false;
     public bool speedUp = false;
     public bool lantern = false;
@@ -23,13 +23,15 @@ public class ChestsPowerUps : MonoBehaviour
     //Controllers
     private AudioSource audioController;
     private PlayerMovement playerMovement;
+    private MessageDisplay messageDisplay;
 
     // Start is called before the first frame update
     void Start()
     {
         
         audioController = GameObject.Find("AudioController").GetComponent<AudioSource>();
-        playerMovement = FindObjectOfType<PlayerMovement>();  
+        playerMovement = FindObjectOfType<PlayerMovement>();
+        messageDisplay = FindObjectOfType<MessageDisplay>();
     }
 
     // Update is called once per frame
@@ -53,17 +55,19 @@ public class ChestsPowerUps : MonoBehaviour
 
             Debug.Log(chestName);
 
-            CheckPowerUp(chestName, player);            
+            CheckPowerUp(chestName);
+
+            messageDisplay.chestDisplay(chestName);
         }
     }
 
-    private void CheckPowerUp(string chestName, Collision2D player)
+    private void CheckPowerUp(string chestName)
     {
         //Check which power up was collected
         switch (chestName)
         {
             case "Audio":
-                audio = true;
+                audioOn = true;
                 playMusic();
                 break;
             case "Jetpack":

@@ -2038,6 +2038,8 @@ GameObject:
   - component: {fileID: 264171261}
   - component: {fileID: 264171260}
   - component: {fileID: 264171259}
+  - component: {fileID: 264171263}
+  - component: {fileID: 264171262}
   m_Layer: 0
   m_Name: Lantern
   m_TagString: Chest
@@ -2045,20 +2047,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &264171258
-Transform:
+--- !u!224 &264171258
+RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 264171257}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.12, y: 11.417, z: 28.40625}
+  m_LocalPosition: {x: 0, y: 0, z: 28.40625}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 17149089}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 2.12, y: 11.417}
+  m_SizeDelta: {x: 1, y: 1}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &264171259
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2076,7 +2083,7 @@ MonoBehaviour:
     type: 3}
   closedSprite: {fileID: 4841567589469545873, guid: 7d47fcfa9ff06114484df6ca7ddf7c9d,
     type: 3}
-  audio: 0
+  audioOn: 0
   jetPack: 0
   speedUp: 0
   lantern: 0
@@ -2142,8 +2149,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1191039419
+  m_SortingLayer: -1
   m_SortingOrder: 0
   m_Sprite: {fileID: 4841567589469545873, guid: 7d47fcfa9ff06114484df6ca7ddf7c9d,
     type: 3}
@@ -2157,6 +2164,46 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &264171262
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 264171257}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: You found a lantern! Look at how much more you can see!
+--- !u!222 &264171263
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 264171257}
+  m_CullTransparentMesh: 0
 --- !u!1 &325642949
 GameObject:
   m_ObjectHideFlags: 0
@@ -4332,6 +4379,8 @@ GameObject:
   - component: {fileID: 452391651}
   - component: {fileID: 452391650}
   - component: {fileID: 452391649}
+  - component: {fileID: 452391653}
+  - component: {fileID: 452391652}
   m_Layer: 0
   m_Name: Audio
   m_TagString: Chest
@@ -4339,20 +4388,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &452391648
-Transform:
+--- !u!224 &452391648
+RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 452391647}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 9.127069, y: -1.5395489, z: 28.40625}
+  m_LocalPosition: {x: 0, y: 0, z: 28.40625}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 17149089}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 9.127069, y: -1.5395489}
+  m_SizeDelta: {x: 1, y: 1}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &452391649
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4370,7 +4424,7 @@ MonoBehaviour:
     type: 3}
   closedSprite: {fileID: 4841567589469545873, guid: 7d47fcfa9ff06114484df6ca7ddf7c9d,
     type: 3}
-  audio: 0
+  audioOn: 0
   jetPack: 0
   speedUp: 0
   lantern: 0
@@ -4436,8 +4490,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1191039419
+  m_SortingLayer: -1
   m_SortingOrder: 0
   m_Sprite: {fileID: 4841567589469545873, guid: 7d47fcfa9ff06114484df6ca7ddf7c9d,
     type: 3}
@@ -4451,6 +4505,46 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &452391652
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 452391647}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Audio is now restored!
+--- !u!222 &452391653
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 452391647}
+  m_CullTransparentMesh: 0
 --- !u!1 &516888529
 GameObject:
   m_ObjectHideFlags: 0
@@ -5296,7 +5390,7 @@ GameObject:
   - component: {fileID: 677248435}
   - component: {fileID: 677248434}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: Message Box
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6645,6 +6739,8 @@ GameObject:
   - component: {fileID: 898766054}
   - component: {fileID: 898766053}
   - component: {fileID: 898766052}
+  - component: {fileID: 898766056}
+  - component: {fileID: 898766055}
   m_Layer: 0
   m_Name: SpeedUp
   m_TagString: Chest
@@ -6652,20 +6748,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &898766051
-Transform:
+--- !u!224 &898766051
+RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 898766050}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 7.14, y: 9.38, z: 28.40625}
+  m_LocalPosition: {x: 0, y: 0, z: 28.40625}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 17149089}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 7.14, y: 9.38}
+  m_SizeDelta: {x: 1, y: 1}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &898766052
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6683,7 +6784,7 @@ MonoBehaviour:
     type: 3}
   closedSprite: {fileID: 4841567589469545873, guid: 7d47fcfa9ff06114484df6ca7ddf7c9d,
     type: 3}
-  audio: 0
+  audioOn: 0
   jetPack: 0
   speedUp: 0
   lantern: 0
@@ -6749,8 +6850,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1191039419
+  m_SortingLayer: -1
   m_SortingOrder: 0
   m_Sprite: {fileID: 4841567589469545873, guid: 7d47fcfa9ff06114484df6ca7ddf7c9d,
     type: 3}
@@ -6764,6 +6865,46 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &898766055
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 898766050}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: You received the movement speed power up! Your movement has now been doubled!
+--- !u!222 &898766056
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 898766050}
+  m_CullTransparentMesh: 0
 --- !u!1 &901174523
 GameObject:
   m_ObjectHideFlags: 0
@@ -11020,7 +11161,6 @@ GameObject:
   - component: {fileID: 1282499218}
   - component: {fileID: 1282499221}
   - component: {fileID: 1282499220}
-  - component: {fileID: 1282499219}
   m_Layer: 5
   m_Name: Message
   m_TagString: MsgBox
@@ -11047,18 +11187,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: -120}
   m_SizeDelta: {x: 500, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1282499219
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1282499217}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 48672623f10cd9646a311fcb4f0ac5bf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1282499220
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15338,6 +15466,8 @@ GameObject:
   - component: {fileID: 1850389382}
   - component: {fileID: 1850389381}
   - component: {fileID: 1850389380}
+  - component: {fileID: 1850389384}
+  - component: {fileID: 1850389383}
   m_Layer: 0
   m_Name: Explosive
   m_TagString: Chest
@@ -15345,20 +15475,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1850389379
-Transform:
+--- !u!224 &1850389379
+RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1850389378}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 22.14, y: -11.6, z: 28.40625}
+  m_LocalPosition: {x: 0, y: 0, z: 28.40625}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 17149089}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 22.14, y: -11.6}
+  m_SizeDelta: {x: 1, y: 1}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1850389380
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15376,7 +15511,7 @@ MonoBehaviour:
     type: 3}
   closedSprite: {fileID: 4841567589469545873, guid: 7d47fcfa9ff06114484df6ca7ddf7c9d,
     type: 3}
-  audio: 0
+  audioOn: 0
   jetPack: 0
   speedUp: 0
   lantern: 0
@@ -15442,8 +15577,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1191039419
+  m_SortingLayer: -1
   m_SortingOrder: 0
   m_Sprite: {fileID: 4841567589469545873, guid: 7d47fcfa9ff06114484df6ca7ddf7c9d,
     type: 3}
@@ -15457,6 +15592,47 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1850389383
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1850389378}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: You found Explosive Rounds. Your shots can now break certain walls. Press
+    'J' to shoot.
+--- !u!222 &1850389384
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1850389378}
+  m_CullTransparentMesh: 0
 --- !u!1 &1851048060
 GameObject:
   m_ObjectHideFlags: 0
@@ -19482,16 +19658,7 @@ Tilemap:
   m_GameObject: {fileID: 2051135264}
   m_Enabled: 1
   m_Tiles:
-  - first: {x: 35, y: -22, z: 0}
-    second:
-      m_TileIndex: 1
-      m_TileSpriteIndex: 1
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_ObjectToInstantiate: {fileID: 0}
-      m_TileFlags: 1
-      m_ColliderType: 1
-  - first: {x: 36, y: -22, z: 0}
+  - first: {x: 35, y: -15, z: 0}
     second:
       m_TileIndex: 0
       m_TileSpriteIndex: 0
@@ -19500,18 +19667,27 @@ Tilemap:
       m_ObjectToInstantiate: {fileID: 0}
       m_TileFlags: 1
       m_ColliderType: 1
+  - first: {x: 36, y: -15, z: 0}
+    second:
+      m_TileIndex: 1
+      m_TileSpriteIndex: 1
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 1
+      m_ColliderType: 1
   m_AnimatedTiles: {}
   m_TileAssetArray:
   - m_RefCount: 1
-    m_Data: {fileID: 11400000, guid: 8b0a7ecf413fc8b4abf709b148103cc1, type: 2}
-  - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: e7f4e37a5a127f746b4cf493b8cf9859, type: 2}
-  m_TileSpriteArray:
   - m_RefCount: 1
-    m_Data: {fileID: 21300000, guid: 0b0bf053bd1e3a647a82ede9c6f8476f, type: 3}
+    m_Data: {fileID: 11400000, guid: 8b0a7ecf413fc8b4abf709b148103cc1, type: 2}
+  m_TileSpriteArray:
   - m_RefCount: 1
     m_Data: {fileID: -5065677307678838522, guid: 50a7b64a34b03df4692e1eb51941af5c,
       type: 3}
+  - m_RefCount: 1
+    m_Data: {fileID: 21300000, guid: 0b0bf053bd1e3a647a82ede9c6f8476f, type: 3}
   m_TileMatrixArray:
   - m_RefCount: 2
     m_Data:
@@ -19680,6 +19856,8 @@ GameObject:
   - component: {fileID: 2088028724}
   - component: {fileID: 2088028723}
   - component: {fileID: 2088028722}
+  - component: {fileID: 2088028726}
+  - component: {fileID: 2088028725}
   m_Layer: 0
   m_Name: Jetpack
   m_TagString: Chest
@@ -19687,20 +19865,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &2088028721
-Transform:
+--- !u!224 &2088028721
+RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2088028720}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.86, y: -11.58, z: 28.40625}
+  m_LocalPosition: {x: 0, y: 0, z: 28.40625}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 17149089}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -4.86, y: -11.58}
+  m_SizeDelta: {x: 1, y: 1}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2088028722
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19718,7 +19901,7 @@ MonoBehaviour:
     type: 3}
   closedSprite: {fileID: 4841567589469545873, guid: 7d47fcfa9ff06114484df6ca7ddf7c9d,
     type: 3}
-  audio: 0
+  audioOn: 0
   jetPack: 0
   speedUp: 0
   lantern: 0
@@ -19784,8 +19967,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1191039419
+  m_SortingLayer: -1
   m_SortingOrder: 0
   m_Sprite: {fileID: 4841567589469545873, guid: 7d47fcfa9ff06114484df6ca7ddf7c9d,
     type: 3}
@@ -19799,6 +19982,46 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2088028725
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2088028720}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 'You found a Jetpack! Double-tap the space bar to jump over two spaces. '
+--- !u!222 &2088028726
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2088028720}
+  m_CullTransparentMesh: 0
 --- !u!1 &2127452525
 GameObject:
   m_ObjectHideFlags: 0
