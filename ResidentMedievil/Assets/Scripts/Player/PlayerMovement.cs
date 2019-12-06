@@ -6,7 +6,7 @@ public class PlayerMovement : MonoBehaviour
 {
     public Vector2 movement;
     public float moveSpeed = 3f;
-    private float moveLimiter = 0.7f;
+    //private float moveLimiter = 0.7f;
     public string playerDirection = "down";
     public Animator animator;
     public Rigidbody2D rBody;
@@ -20,15 +20,16 @@ public class PlayerMovement : MonoBehaviour
 
     void FixedUpdate()
     {
-        PlayerAnimation();
-        PlayerDirection();
-
         //Check for diagonal movement and slow down player speed
         if (movement.x != 0 && movement.y != 0)
         {
-            movement.x *= moveLimiter;
-            movement.y *= moveLimiter;
+            //movement.x *= moveLimiter;
+            //movement.y *= moveLimiter;
+            movement.y = 0;
         }
+
+        PlayerAnimation();
+        PlayerDirection();
 
         rBody.velocity = new Vector2(movement.x * moveSpeed, movement.y * moveSpeed);
     }

@@ -37,8 +37,6 @@ public class Flamethrower : MonoBehaviour
             {
                 Vector3 positionFP = (firepoints[i].localPosition);
 
-                Debug.Log(positionFP);
-
                 if (positionFP.x > 0) //Right
                 {
                     activeFireball = fbPrefabRight;
@@ -65,11 +63,7 @@ public class Flamethrower : MonoBehaviour
                 Rigidbody2D rbFireball = fireball.GetComponent<Rigidbody2D>();
 
                 rbFireball.AddForce(fireballV * fireballForce, ForceMode2D.Impulse);
-
-                Debug.Log(activeFireball);
             }
-
-            Debug.Log("shoot");
 
             yield return new WaitForSeconds(0.8f); //Shoot again in __ second
         }

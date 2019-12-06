@@ -31,7 +31,10 @@ public class MessageDisplay : MonoBehaviour
     //Clear message when player has left the trigger area
     public void OnTriggerExit2D(Collider2D collision)
     {
-        msgBox.text = " ";
+        if (collision.CompareTag("Player"))
+        {
+            msgBox.text = " ";
+        }
     }
 
     
