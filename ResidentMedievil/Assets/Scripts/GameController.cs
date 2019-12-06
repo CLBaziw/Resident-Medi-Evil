@@ -4,13 +4,14 @@ using UnityEngine;
 
 public class GameController : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
+    //Power Up Trackers
+    public bool audioOn = false;
+    public bool jetPack = false;
+    public bool speedUp = false;
+    public bool lantern = false;
+    public bool explosive = false;
 
-    }
 
-    // Update is called once per frame
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))

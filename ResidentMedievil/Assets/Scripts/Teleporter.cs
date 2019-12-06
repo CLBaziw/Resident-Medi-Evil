@@ -23,11 +23,14 @@ public class Teleporter : MonoBehaviour
         
     }
 
-    private void OnTriggerEnter2D(Collider2D player)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        player.transform.position = waypoint.transform.position;
+        if (collision.CompareTag("Player"))
+        {
+            collision.transform.position = waypoint.transform.position;
 
-        //When player steps on teleporter, clear Message box
-        msgBox.text = "";
+            //When player steps on teleporter, clear Message box
+            msgBox.text = "";
+        }
     }
 }

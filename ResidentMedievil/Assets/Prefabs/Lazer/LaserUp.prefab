@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 4421820139601341802}
   m_Layer: 0
   m_Name: LaserUp
-  m_TagString: Untagged
+  m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -103,7 +103,7 @@ Rigidbody2D:
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 4
 --- !u!70 &3007665433052470513
 CapsuleCollider2D:
@@ -131,7 +131,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 15e0ee90817794b4c88b5b9fcb118d58, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 27b2da2a6d30be141ab7d4be532f1aff, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.25
   m_Pitch: 1

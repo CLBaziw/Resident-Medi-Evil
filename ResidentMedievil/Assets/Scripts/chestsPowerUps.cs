@@ -13,27 +13,19 @@ public class ChestsPowerUps : MonoBehaviour
     private bool isOpen; //Check if chest as already been triggered
     private string chestName;
 
-    //Power Up Trackers
-    public bool audioOn = false;
-    public bool jetPack = false;
-    public bool speedUp = false;
-    public bool lantern = false;
-    public bool explosive = false;
-
     //Controllers
     private AudioSource audioController;
     private PlayerMovement playerMovement;
     private MessageDisplay messageDisplay;
-    private GameObject fogOfWar;
+    private GameController tracker;
 
     // Start is called before the first frame update
     void Start()
     {
-        
         audioController = GameObject.Find("GameController").GetComponent<AudioSource>();
         playerMovement = FindObjectOfType<PlayerMovement>();
         messageDisplay = FindObjectOfType<MessageDisplay>();
-        fogOfWar = GameObject.Find("FogOfWar");
+        tracker = FindObjectOfType<GameController>();
     }
 
     // Update is called once per frame
@@ -45,21 +37,23 @@ public class ChestsPowerUps : MonoBehaviour
     //When player collides with chest
     public void OnCollisionEnter2D(Collision2D player)
     {
-        if (isOpen)
-        {
-            Debug.Log("Chest has already been triggered"); //If chest is open no more interacting
-        }
-        else
-        {
-            ChangeChest();
+        if (player.gameObject.CompareTag("Player")){
+            if (isOpen)
+            {
+                Debug.Log("Chest has already been triggered"); //If chest is open no more interacting
+            }
+            else
+            {
+                ChangeChest();
 
-            chestName = gameObject.name;
+                chestName = gameObject.name;
 
-            Debug.Log(chestName);
+                Debug.Log(chestName);
 
-            CheckPowerUp(chestName);
+                CheckPowerUp(chestName);
 
-            messageDisplay.chestDisplay(chestName);
+                messageDisplay.chestDisplay(chestName);
+            }
         }
     }
 
@@ -69,23 +63,23 @@ public class ChestsPowerUps : MonoBehaviour
         switch (chestName)
         {
             case "Audio":
-                audioOn = true;
-                playMusic();
+                tracker.audioOn = true;
+                PlayMusic();
                 break;
             case "Jetpack":
-                jetPack = true;
+                tracker.jetPack = true;
                 Debug.Log("Jetpack has been picked up"); //Implement double jump
                 break;
             case "SpeedUp":
-                speedUp = true;
-                increaseSpeed();
+                tracker.speedUp = true;
+                IncreaseSpeed();
                 break;
             case "Lantern":
-                lantern = true;
+                tracker.lantern = true;
                 FogOfWar();
                 break;
             case "Explosive":
-                explosive = true;
+                tracker.explosive = true;
                 Debug.Log("Explosive rounds have been picked up"); //Implement explosive rounds
                 break;
         }
@@ -98,18 +92,23 @@ public class ChestsPowerUps : MonoBehaviour
         spriteRenderer.sprite = openSprite;
     }
 
-    private void playMusic()
+    private void PlayMusic()
     {
         audioController.Play();
     }
 
-    private void increaseSpeed()
+    private void IncreaseSpeed()
     {
         playerMovement.moveSpeed = 2 * playerMovement.moveSpeed; //Double player movement speed
     }
 
     private void FogOfWar()
     {
-        Destroy(fogOfWar);
+        Destroy(GameObject.Find("FogOfWar"));
+    }
+
+    private void ExplosiveRounds()
+    {
+        
     }
 }
