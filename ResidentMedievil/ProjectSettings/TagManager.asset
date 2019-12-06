@@ -9,6 +9,8 @@ TagManager:
   - Teleporter
   - BreakableWalls
   - Bullet
+  - Hazard
+  - Enemy_Bullet
   layers:
   - Default
   - TransparentFX
