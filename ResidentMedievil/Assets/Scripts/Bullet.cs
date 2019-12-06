@@ -6,8 +6,13 @@ public class Bullet : MonoBehaviour
 {
 
     //public GameObject hitEffect;
-     void OnCollisionEnter2D(Collision2D collision)
+    void OnCollisionEnter2D(Collision2D collision)
     {
-        Destroy(gameObject);
-    }
+        Debug.Log(collision.gameObject.tag);
+
+        if (!collision.gameObject.CompareTag("Player"))
+        {
+            Destroy(gameObject);
+        }
+    }    
 }

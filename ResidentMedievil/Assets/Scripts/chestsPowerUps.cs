@@ -24,6 +24,7 @@ public class ChestsPowerUps : MonoBehaviour
     private AudioSource audioController;
     private PlayerMovement playerMovement;
     private MessageDisplay messageDisplay;
+    private GameObject fogOfWar;
 
     // Start is called before the first frame update
     void Start()
@@ -32,6 +33,7 @@ public class ChestsPowerUps : MonoBehaviour
         audioController = GameObject.Find("GameController").GetComponent<AudioSource>();
         playerMovement = FindObjectOfType<PlayerMovement>();
         messageDisplay = FindObjectOfType<MessageDisplay>();
+        fogOfWar = GameObject.Find("FogOfWar");
     }
 
     // Update is called once per frame
@@ -80,7 +82,7 @@ public class ChestsPowerUps : MonoBehaviour
                 break;
             case "Lantern":
                 lantern = true;
-                Debug.Log("Lantern has been picked up"); //Implement Fog of War
+                FogOfWar();
                 break;
             case "Explosive":
                 explosive = true;
@@ -104,5 +106,10 @@ public class ChestsPowerUps : MonoBehaviour
     private void increaseSpeed()
     {
         playerMovement.moveSpeed = 2 * playerMovement.moveSpeed; //Double player movement speed
+    }
+
+    private void FogOfWar()
+    {
+        Destroy(fogOfWar);
     }
 }

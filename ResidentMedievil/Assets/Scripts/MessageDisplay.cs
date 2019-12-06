@@ -19,10 +19,13 @@ public class MessageDisplay : MonoBehaviour
     //When trigger is activated
     public void OnTriggerEnter2D(Collider2D collision)
     {
-        //Get contents of Tilemap Trigger text component
-        Text message = GetComponent<Text>();
+        if (collision.CompareTag("Player"))
+        {
+            //Get contents of Tilemap Trigger text component
+            Text message = GetComponent<Text>();
 
-        msgBox.text = message.text;       
+            msgBox.text = message.text;
+        }  
     }
 
     //Clear message when player has left the trigger area
