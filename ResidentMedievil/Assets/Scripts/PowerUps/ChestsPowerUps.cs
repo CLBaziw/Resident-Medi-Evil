@@ -68,7 +68,6 @@ public class ChestsPowerUps : MonoBehaviour
                 break;
             case "Jetpack":
                 tracker.jetPack = true;
-                Debug.Log("Jetpack has been picked up"); //Implement double jump
                 break;
             case "SpeedUp":
                 tracker.speedUp = true;
@@ -80,7 +79,6 @@ public class ChestsPowerUps : MonoBehaviour
                 break;
             case "Explosive":
                 tracker.explosive = true;
-                Debug.Log("Explosive rounds have been picked up"); //Implement explosive rounds
                 break;
         }
     }
@@ -105,10 +103,5 @@ public class ChestsPowerUps : MonoBehaviour
     private void FogOfWar()
     {
         Destroy(GameObject.Find("FogOfWar"));
-    }
-
-    private void ExplosiveRounds()
-    {
-        
     }
 }

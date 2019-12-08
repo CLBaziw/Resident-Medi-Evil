@@ -11,6 +11,7 @@ TagManager:
   - Bullet
   - Hazard
   - Enemy_Bullet
+  - Holes
   layers:
   - Default
   - TransparentFX
