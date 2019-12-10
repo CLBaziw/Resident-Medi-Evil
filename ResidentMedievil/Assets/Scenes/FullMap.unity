@@ -6002,11 +6002,7 @@ Grid:
   m_CellLayout: 0
   m_CellSwizzle: 0
 <<<<<<< HEAD
-<<<<<<< HEAD
 --- !u!1 &609258142
-=======
---- !u!1 &568410623
->>>>>>> 6df2764faaa958e634c4f2550c37e1430e0427a9
 =======
 --- !u!1 &568410623
 >>>>>>> 6df2764faaa958e634c4f2550c37e1430e0427a9
@@ -6018,22 +6014,16 @@ GameObject:
   serializedVersion: 6
   m_Component:
 <<<<<<< HEAD
-<<<<<<< HEAD
   - component: {fileID: 609258143}
   m_Layer: 0
   m_Name: Firepoint_Up
 =======
-=======
->>>>>>> 6df2764faaa958e634c4f2550c37e1430e0427a9
   - component: {fileID: 568410624}
   - component: {fileID: 568410627}
   - component: {fileID: 568410626}
   - component: {fileID: 568410625}
   m_Layer: 5
   m_Name: Timer Text
-<<<<<<< HEAD
->>>>>>> 6df2764faaa958e634c4f2550c37e1430e0427a9
-=======
 >>>>>>> 6df2764faaa958e634c4f2550c37e1430e0427a9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6041,13 +6031,8 @@ GameObject:
   m_StaticEditorFlags: 0
   m_IsActive: 1
 <<<<<<< HEAD
-<<<<<<< HEAD
 --- !u!4 &609258143
 Transform:
-=======
---- !u!224 &568410624
-RectTransform:
->>>>>>> 6df2764faaa958e634c4f2550c37e1430e0427a9
 =======
 --- !u!224 &568410624
 RectTransform:
@@ -6056,7 +6041,6 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< HEAD
 <<<<<<< HEAD
   m_GameObject: {fileID: 609258142}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -6067,8 +6051,6 @@ RectTransform:
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 =======
-=======
->>>>>>> 6df2764faaa958e634c4f2550c37e1430e0427a9
   m_GameObject: {fileID: 568410623}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
@@ -6135,9 +6117,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 568410623}
   m_CullTransparentMesh: 0
-<<<<<<< HEAD
->>>>>>> 6df2764faaa958e634c4f2550c37e1430e0427a9
-=======
 >>>>>>> 6df2764faaa958e634c4f2550c37e1430e0427a9
 --- !u!1 &645335403
 GameObject:
