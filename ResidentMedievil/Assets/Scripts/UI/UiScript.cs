@@ -22,7 +22,7 @@ public class UiScript : MonoBehaviour
     {
         float t = Time.time - startTime;
 
-        string seconds = (t % 60).ToString("f2");
+        string seconds = (t % 60).ToString("f1");
 
         timerText.text = ($"{seconds}");
 
