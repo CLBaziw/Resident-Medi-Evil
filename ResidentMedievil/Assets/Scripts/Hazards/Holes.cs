@@ -17,7 +17,7 @@ public class Holes : MonoBehaviour
         {
             if (!checkPowerUps.jetPack)
             {
-                Debug.Log("Die");
+                //Die
             }
         }
     }
