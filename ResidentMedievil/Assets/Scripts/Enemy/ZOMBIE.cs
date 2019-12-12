@@ -19,6 +19,8 @@ public class Zombie : MonoBehaviour
     private Vector2 startPos;
     const float maxClamp = 2f;
 
+    private Endgame endgame;
+
     void Start()
     {
         //Script 
@@ -26,6 +28,7 @@ public class Zombie : MonoBehaviour
         rBody = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         audioDeath = GetComponent<AudioSource>();
+        endgame = FindObjectOfType<Endgame>();
 
         latestDirectionChangeTime = 0f;
         calcuateNewMovementVector();
@@ -79,6 +82,8 @@ public class Zombie : MonoBehaviour
             audioDeath.Play();
 
             rBody.constraints = RigidbodyConstraints2D.FreezeAll;
+
+            endgame.score += 20;
 
             Destroy(gameObject, 0.5f);
         }

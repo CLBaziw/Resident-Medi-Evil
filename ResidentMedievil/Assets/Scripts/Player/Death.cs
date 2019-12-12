@@ -28,8 +28,6 @@ public class Death : MonoBehaviour
         animator.SetBool("Death", true);
         rBody.constraints = RigidbodyConstraints2D.FreezePosition | RigidbodyConstraints2D.FreezeRotation;
 
-        Destroy(gameObject, 3f);
-
         //Display endgame screen
         endgame.GameOver("lose");
     }

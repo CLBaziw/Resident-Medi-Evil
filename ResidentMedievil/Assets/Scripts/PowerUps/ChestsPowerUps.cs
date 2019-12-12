@@ -18,6 +18,7 @@ public class ChestsPowerUps : MonoBehaviour
     private PlayerMovement playerMovement;
     private MessageDisplay messageDisplay;
     private GameController tracker;
+    private Endgame endgame;
 
     // Start is called before the first frame update
     void Start()
@@ -26,6 +27,7 @@ public class ChestsPowerUps : MonoBehaviour
         playerMovement = FindObjectOfType<PlayerMovement>();
         messageDisplay = FindObjectOfType<MessageDisplay>();
         tracker = FindObjectOfType<GameController>();
+        endgame = FindObjectOfType<Endgame>();
     }
 
     // Update is called once per frame
@@ -53,6 +55,8 @@ public class ChestsPowerUps : MonoBehaviour
                 CheckPowerUp(chestName);
 
                 messageDisplay.chestDisplay(chestName);
+
+                endgame.score -= 50;
             }
         }
     }

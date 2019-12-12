@@ -31,9 +31,6 @@ public class Holes : MonoBehaviour
         {
             topHit = Physics2D.OverlapBox(topCheck.position, size, 0f, whatIsPlayer);
             bottomHit = Physics2D.OverlapBox(bottomCheck.position, size, 0f, whatIsPlayer);
-
-            Debug.Log("Top" + topHit);
-            Debug.Log("Bottom" + bottomHit);
         }
 
         if (topHit || bottomHit)
