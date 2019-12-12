@@ -20,8 +20,13 @@ public class Endgame : MonoBehaviour
     void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Player")) 
-        { 
-            Debug.Log("Trigger Endgame");
+        {
+            GameOver("win");
         }
+    }
+
+    public void GameOver(string winLose)
+    {
+
     }
 }

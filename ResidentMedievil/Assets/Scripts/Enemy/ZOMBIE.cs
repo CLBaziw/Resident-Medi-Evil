@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ZOMBIE : MonoBehaviour
+public class Zombie : MonoBehaviour
 {
     private float latestDirectionChangeTime;
     private readonly float directionChangeTime = 0.5f;
