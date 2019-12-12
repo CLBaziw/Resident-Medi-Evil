@@ -41,11 +41,11 @@ public class PlayerMovement : MonoBehaviour
             //Call animator for movement
             animator.SetFloat("Horizontal", movement.x);
             animator.SetFloat("Vertical", movement.y);
-            animator.SetLayerWeight(1, 1);
+            animator.SetBool("Move", true);
         }
         else
         {
-            animator.SetLayerWeight(1, 0);
+            animator.SetBool("Move", false);
         }
     }
 
