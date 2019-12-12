@@ -14,6 +14,8 @@ public class Holes : MonoBehaviour
     private bool topHit = false;
     private bool bottomHit = false;
 
+    private Collider2D colliderHole;
+
     private GameObject player;
 
     private Death playerDeath;
@@ -23,6 +25,8 @@ public class Holes : MonoBehaviour
         checkPowerUps = FindObjectOfType<GameController>();
         player = GameObject.FindGameObjectWithTag("Player");
         playerDeath = FindObjectOfType<Death>();
+        colliderHole = GetComponent<Collider2D>();
+        colliderHole.enabled = true;
     }
 
     private void Update()
@@ -52,7 +56,7 @@ public class Holes : MonoBehaviour
         }
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
@@ -62,11 +66,8 @@ public class Holes : MonoBehaviour
             }
             else
             {
-                Collider2D collider2D = GetComponent<Collider2D>();
-
-                collider2D.enabled = false;
+                colliderHole.enabled = false;
             }
-                  
         }
     }
 

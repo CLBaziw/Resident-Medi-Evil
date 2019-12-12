@@ -61,6 +61,12 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Enemy
+    uniqueID: 1165515587
+    locked: 0
+  - name: Player
+    uniqueID: 970900987
+    locked: 0
   - name: Fog of War
     uniqueID: 455141591
     locked: 0
