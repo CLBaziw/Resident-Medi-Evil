@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 524058120090291054}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.22, y: 0, z: 0}
+  m_LocalPosition: {x: -0.313, y: -0.026, z: 0}
   m_LocalScale: {x: 0.22157, y: 0.22157, z: 0.22157}
   m_Children: []
   m_Father: {fileID: 7354555734083340713}
@@ -54,7 +54,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2387273572266003611}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0, y: 0.3, z: 0}
+  m_LocalPosition: {x: -0, y: 0.373, z: 0}
   m_LocalScale: {x: 0.22157, y: 0.22157, z: 0.22157}
   m_Children: []
   m_Father: {fileID: 7354555734083340713}
@@ -84,7 +84,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3291778704275623280}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0, y: -0.1, z: 0}
+  m_LocalPosition: {x: -0, y: -0.477, z: 0}
   m_LocalScale: {x: 0.22157, y: 0.22157, z: 0.22157}
   m_Children: []
   m_Father: {fileID: 7354555734083340713}
@@ -114,7 +114,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5494696673370785987}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.22, y: 0, z: 0}
+  m_LocalPosition: {x: 0.316, y: -0.031, z: 0}
   m_LocalScale: {x: 0.22157, y: 0.22157, z: 0.22157}
   m_Children: []
   m_Father: {fileID: 7354555734083340713}
@@ -131,8 +131,8 @@ GameObject:
   - component: {fileID: 7354555734083340713}
   - component: {fileID: 8498978046075218268}
   - component: {fileID: 4454130991506788955}
-  - component: {fileID: 5601042862554170604}
   - component: {fileID: 7866805745983358225}
+  - component: {fileID: 3032443299413228444}
   m_Layer: 0
   m_Name: Flamethrower
   m_TagString: Hazard
@@ -147,7 +147,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7964670484748689755}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -5.5, y: -23, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -227,32 +227,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!61 &5601042862554170604
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7964670484748689755}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.0016908646}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.6301861, y: 0.8786373}
-  m_EdgeRadius: 0
 --- !u!114 &7866805745983358225
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -273,3 +247,29 @@ MonoBehaviour:
     type: 3}
   fbPrefabDown: {fileID: 4879320588510452206, guid: 83d31e7c91fd0f644bd01ffae38b5cc3,
     type: 3}
+--- !u!61 &3032443299413228444
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7964670484748689755}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.0028061867, y: -0.06735039}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.36017704, y: 0.42191315}
+  m_EdgeRadius: 0

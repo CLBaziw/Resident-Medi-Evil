@@ -69,12 +69,16 @@ public class Flamethrower : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.CompareTag("Player"))
+        Death playerDeath = FindObjectOfType<Death>();
+
+        if (collision.gameObject.CompareTag("Player"))
         {
             //Kill player
-            Debug.Log("Player ran into flamethrower");
+            playerDeath.KillPlayer("flamethrower");
         }
     }
+        
+    
 }

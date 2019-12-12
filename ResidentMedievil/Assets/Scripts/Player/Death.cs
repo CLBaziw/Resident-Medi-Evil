@@ -23,7 +23,7 @@ public class Death : MonoBehaviour
     public void KillPlayer(string killer)
     {
         animator.SetBool("Death", true);
-        rBody.constraints = RigidbodyConstraints2D.FreezePosition;
+        rBody.constraints = RigidbodyConstraints2D.FreezePosition | RigidbodyConstraints2D.FreezeRotation;
 
         Destroy(gameObject, 3f);
 

@@ -9,10 +9,14 @@ public class Fireball : MonoBehaviour
     private Vector3 newPosition;
     const int max = 3;
 
+    private Death playerDeath;
+
     private void Start()
     {
         originalPosition = gameObject.transform.position;
         newPosition = originalPosition;
+
+        playerDeath = FindObjectOfType<Death>();
     }
 
     private void FixedUpdate()
@@ -31,6 +35,7 @@ public class Fireball : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             //Death
+            playerDeath.KillPlayer("fireball");
         }
         
         Destroy(gameObject);
